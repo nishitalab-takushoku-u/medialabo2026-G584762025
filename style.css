@@ -1,0 +1,14 @@
+h1{
+    color:white;
+    text-shadow: #ff0404 1px 0 50px;
+}
+h2{
+    border-bottom-style: solid ;
+    border-color:rgba(255, 149, 0, 0.933); 
+}
+p.kougi1{
+    background:linear-gradient(0.25turn,#ffed50, white);
+}
+p.kougi2{
+    background:linear-gradient(0.25turn,#ffed50, white);
+}
