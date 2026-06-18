@@ -5,10 +5,14 @@ h1{
 h2{
     border-bottom-style: solid ;
     border-color:rgba(255, 149, 0, 0.933); 
+    margin-top: 70px;
 }
 p.kougi1{
-    background:linear-gradient(0.25turn,#ffed50, white);
+    background:linear-gradient(0.25turn,#fe8282, white);
 }
 p.kougi2{
-    background:linear-gradient(0.25turn,#ffed50, white);
+    background:linear-gradient(0.25turn,#fff050, white);
+}
+p.kougi3{
+    background:linear-gradient(0.25turn,#a5ff50, white);
 }
