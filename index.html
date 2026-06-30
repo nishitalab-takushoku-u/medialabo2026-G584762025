@@ -18,7 +18,12 @@
     </p>
 
     <h2>数当てゲーム</h2>
-    <p>(このテーマは第3回から数あてゲームを作りますので、その後にゲームの概要を説明してください.)(200文字以上)</p>
+    <p>(このテーマは第3回から数あてゲームを作りますので、その後にゲームの概要を説明してください.)(200文字以上)
+      このページでは、1~10の整数が自動で設定されるためその整数を三回以内に当てるとゆうものです。
+      まず変数として、回数を数えるkaisu,回数を表示する場所を示すn,予想した数を抜き出すa,結果を出力を示すrとおく。
+      実行されたら1~10の整数をランダムにkotaeという変数に代入しコンソールに出力する、加えて回数を初期値1として出力させる。
+      その後数値を入力されボタンが押されたら、kaisuを1増やしnを使って出力、yosoという変数にaを使って入力された数を代入し、yosoとkotaeを比べてその関係によってrを使いテキストを変更するというシステムになっています。
+    </p>
     <p>数当てゲームのページ:<a href="kazuate.html"
                             title="数当てゲームのリンク"
                             target="_blank">kazuate.html</a>
@@ -39,7 +44,7 @@
     </p>
 
     <h3>第二回 CSS による Web ページの装飾</h3>
-    <p class="kougi2">今回の講義では、主にCSSについて学んだhtmlにcssファイルをリンクさせるためには、 &lt;link rel="stylesheet" href="[cssファイル名]"&lg; を使用しcssファイルに変更したい内容を書き込んでいく。
+    <p class="kougi2">今回の講義では、主にCSSについて学んだhtmlにcssファイルをリンクさせるためには、 &lt;link rel="stylesheet" href="[cssファイル名]"&gt; を使用しcssファイルに変更したい内容を書き込んでいく。
       編集するにはまず変更したいタグを決めて [タグ名]{} の中に記入していく。 coler:[色] で文字のいろの指定し、 text-shadow :で文字に影がつく。 border で文字の周りに線を敷くことができ、 border-[線を引く場所]-style:[線の種類] で線の引き方・線の種類（例：棒線solid、点線dashed など）を設定できる。
        background では背景の色を指定でき linear-gradient でグラデーションをつけることができる。まわりのものから距離を作りたいときは、margin(線と前の要素との距離)、padding(線と文章の距離)を使うなど学んだ。
 
@@ -51,7 +56,6 @@
     <h3>第三回 JavaScript の基礎</h3>
     <p class="kougi3">今回の講義では、javaScript でブラウザを編集する方法について学んだ。 JavaScript で編集するために、firefox の右上からweb開発者ツールのコンソールを使用した。
        java と javaScript の違いはscriptはエラーが少なくなるほか、javaでの変数宣言はint・double・StringなどあるがJavaScriptでは let になる。javaでの System.out.println(); はJavaScriptで console.log(); になる。javaでの for(;;){} はJavaScriptでは for(let n of [表示したいもの]){} になる、
-
     </p>
 
     <p>演習の成果:<a href="practice-js/obj-practice.html"
@@ -60,7 +64,15 @@
     </p>
 
     <h3>第四回 DOM とJavaScript</h3>
+    <p class="kougi4">今回の講義では、前回に続いてjavaScriptでのブラウザ編集について学んだ。たとえば&lt;button id="~~"&gt;~~&lt;/button&gt;でページ内にボタンをつけることができIDやボタン上の文字を設定できる、&lt;input type="text" name="shimei" id="shimei" size="10"&gt;ではテキストを入力できるテキストボックスを設置でき、nameで名前 idでID sizeで大きさを設定できる。
+      テキストボックスの場合はinput type="text"になるがtyoe="~~"の〜〜の部分を変更することで他にも様々なユーザーインターフェースを使うことができる（例 colorでカラービーカー、dateでカレンダー,search 検索キー　など）document.querySelector(~~~)では~~の要素を検索でき~~にp#messageと入力するとP要素のmessageを検索する。テキストボックス内のテキストを検索したいなら~~.textContentを使うなど学んだ。
 
+    </p>
+
+    <p>演習の成果:<a href="practice-eventdom/tashizan.html"
+                   title="足し算ページのリンク"
+                   target="_blank">演習4-10</a>
+    </p>
     <h3>第五回 イベント処理</h3>
   </body>
 </html>

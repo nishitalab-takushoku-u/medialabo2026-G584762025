@@ -11,11 +11,14 @@ h2{
     margin-top: 70px;
 }
 p.kougi1{
-    background:linear-gradient(0.25turn,#fe8282, white);
+    background:linear-gradient(0.25turn,#fe8282, #e7f6f0);
 }
 p.kougi2{
-    background:linear-gradient(0.25turn,#fff050, white);
+    background:linear-gradient(0.25turn,#fff050, #e7f6f0);
 }
 p.kougi3{
-    background:linear-gradient(0.25turn,#a5ff50, white);
+    background:linear-gradient(0.25turn,#a5ff50, #e7f6f0);
+}
+p.kougi4{
+    background:linear-gradient(0.25turn,#50ffeb, #e7f6f0);
 }
