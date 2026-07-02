@@ -17,6 +17,7 @@
     <title>project.html</title>
     <link rel="stylesheet" href="project.css">
     <script src="weather.js" defer></script>
+    <script src="project.js" defer></script>
   </head>
   <body>
     <ul>
@@ -31,6 +32,45 @@
     <li>湿度: 14</li>
     <li>風速: 2.65</li>
     <li>風向: 197</li>
+
+    <h2>
+    <span id="id"></span>
+    <label for="kensaku">検索キー</label>
+    <select name="kuni" id="kuni" >
+      <option value="360630">カイロ （エジプト）</option>
+      <option value="524901">モスクワ （ロシア）</option>
+      <option value="993800"> ヨハネスブルク （南アフリカ）</option>
+      <option value="1816670">北京 （中華人民共和国）</option>
+      <option value="1850147">東京 （日本）</option>
+      <option value="1880252">シンガポール</option>
+      <option value="2147714">シドニー （オーストラリア）</option>
+      <option value="2643743">ロンドン （イギリス）</option>
+      <option value="2968815">パリ （フランス）</option>
+      <option value="3451189">リオデジャネイロ （ブラジル）</option>
+      <option value="5128581">ニューヨーク （アメリカ合衆国）</option>
+      <option value="5368361">ロサンゼルス （アメリカ合衆国）</option>
+    </select> 
+    </h2>
+
+    <h2>
+    <label for="koumoku">項目</label>
+    <select name="koumoku" id="koumoku" >
+      <option value="all">すべて</option>
+      <option value="coord.lon">軽度</option>
+      <option value="coord.lat">緯度</option>
+      <option value="weather[0].description">天気</option>
+      <option value="main.temp_min">最低気温</option>
+      <option value="main.temp_max">最高気温</option>
+      <option value="main.humidity">湿度</option>
+      <option value="wind.speed">風速</option>
+      <option value="wind.deg">風向</option>
+      <option value="name">都市名</option>
+    </select> 
+    </h2>
+    <h2>
+    <button id="kensaku">検索</button>
+    </h2>
 </p>
+
   </body>
 </html>
