@@ -35,7 +35,7 @@
     <h3>第一回WWW と HTML</h3>
     <p class="kougi1">今回の講義では、WWW HTMLについて学んだ、URLにはプロトコル(https:)、サーバ、パスがあり、これらがインターネット上の膨大なデータからWebページを探すのに役立っている。
        HTMLではレイアウトを変えるためにたくさんのタグがある。&lt;p&gt;&lt;/p&gt; ではタグ内の文が一つの要素となり &lt;strong&gt;&lt;/strong&gt; ではタグ内の文字が強調される
-       &lt;img src="〜〜"&gt; では〜〜に画像ファイルを入力することで画像が表示される。画像ファイルの後ろに alt="〜〜" を入力すると閲覧者が読み上げソフトを使用していると〜〜内にある文字が読み上げられる。ul は番号なしのリストを作る、ol は番号付きのリストを作る(ul ol どちらも最初の要素はliにする)など学んだ。
+       &lt;img src="〜〜"&gt; では〜〜に画像ファイルを入力することで画像が表示される。画像ファイルの後ろに alt="〜〜" を入力すると閲覧者が読み上げソフトを使用していると〜〜内にある文字が読み上げられる。ul は番号なしのリストを作る、ol は番号付きのリストを作る（項目はliで作る）など学んだ。
     </p>
 
     <p>演習の成果:<a href="practice-html/elements.html"
@@ -64,7 +64,7 @@
     </p>
 
     <h3>第四回 DOM とJavaScript</h3>
-    <p class="kougi4">今回の講義では、前回に続いてjavaScriptでのブラウザ編集について学んだ。たとえば&lt;button id="~~"&gt;~~&lt;/button&gt;でページ内にボタンをつけることができIDやボタン上の文字を設定できる、&lt;input type="text" name="shimei" id="shimei" size="10"&gt;ではテキストを入力できるテキストボックスを設置でき、nameで名前 idでID sizeで大きさを設定できる。
+    <p class="kougi4">今回の講義では、DOMについて学んだ。DOMはページにボタンなどの機能を追加し動きをつけることができる。たとえば&lt;button id="~~"&gt;~~&lt;/button&gt;でページ内にボタンをつけることができIDやボタン上の文字を設定できる、&lt;input type="text" name="shimei" id="shimei" size="10"&gt;ではテキストを入力できるテキストボックスを設置でき、nameで名前 idでID sizeで大きさを設定できる。
       テキストボックスの場合はinput type="text"になるがtyoe="~~"の〜〜の部分を変更することで他にも様々なユーザーインターフェースを使うことができる（例 colorでカラービーカー、dateでカレンダー,search 検索キー　など）document.querySelector(~~~)では~~の要素を検索でき~~にp#messageと入力するとP要素のmessageを検索する。テキストボックス内のテキストを検索したいなら~~.textContentを使うなど学んだ。
 
     </p>
@@ -74,5 +74,17 @@
                    target="_blank">演習4-10</a>
     </p>
     <h3>第五回 イベント処理</h3>
+    <p class ="kougi5">今回の講義では前回に続きDOMについて学んだ。今回学んだのは主にプログラミングを使った要素の追加・削除・編集です。
+      具体的には。要素の追加にはdocument.createElement(〜〜)を使用し、要素1.insertAdjacentElement('beforeend', 要素2)で要素1の中に要素2を配置、要素1.insertAdjacentElement('afterend', 要素2)で要素1の要素の直後に要素2を配置するなどを使い追加する場所を指定する。
+      要素.setAttribute(属性名, 値)は要素に属性をつけることができ、要素.remove()は要素の削除ができる。これらを使用するとHTMLで要素を書き込む必要がなくなり、テキストを変える以外のこともプログラミングでできるようになることを学んだ。
+    </p>
+
+    <p>演習の成果:<a href="practice-dom2/dom2-exercise.html"
+                   title="DOMプログラミング(2)のリンク"
+                   target="_blank">演習5-7</a>
+    </p>
+    <h3>第六回 プロジェクト課題を完成させよう</h3>
+    <p class ="kougi6">今回の講義では、情報通信処理について学んだ
+    </p>
   </body>
 </html>

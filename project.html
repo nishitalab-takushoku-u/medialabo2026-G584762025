@@ -1,42 +1,23 @@
-<!-- 世界の天気（検索結果1件）
-
-    経度: 116.3972
-    緯度: 39.9075
-    天気: 曇りがち
-    最低気温: 9.94
-    最高気温: 9.94
-    湿度: 14
-    風速: 2.65
-    風向: 197
-    都市名: 北京市
--->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>project.html</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="weather.js" defer></script>
-    <script src="project.js" defer></script>
   </head>
-  <body>
-    <ul>
-    <h1>世界の天気</h1>
-    <p>〜〜〜〜検索結果〜〜〜〜</p>
-    <strong>[都市名]: 北京市</strong>
-    <li>経度: 116.3972</li>
-    <li>緯度: 39.9075</li>
-    <li>天気: 曇りがち</li>
-    <li>最低気温: 9.94</li>
-    <li>最高気温: 9.94</li>
-    <li>湿度: 14</li>
-    <li>風速: 2.65</li>
-    <li>風向: 197</li>
 
-    <h2>
+  <body>
+    <p>
+    <h1>世界の天気</h1>
+    <strong>検索したい国と項目を選んで検索ボタンを押してください</strong>
+  </p>
+   <h2>
     <span id="id"></span>
     <label for="kensaku">検索キー</label>
     <select name="kuni" id="kuni" >
+      <option value="1125">調べたい国を選んでください</option>
       <option value="360630">カイロ （エジプト）</option>
       <option value="524901">モスクワ （ロシア）</option>
       <option value="993800"> ヨハネスブルク （南アフリカ）</option>
@@ -50,9 +31,8 @@
       <option value="5128581">ニューヨーク （アメリカ合衆国）</option>
       <option value="5368361">ロサンゼルス （アメリカ合衆国）</option>
     </select> 
-    </h2>
-
-    <h2>
+  </h2>
+  <h2>
     <label for="koumoku">項目</label>
     <select name="koumoku" id="koumoku" >
       <option value="all">すべて</option>
@@ -64,13 +44,11 @@
       <option value="main.humidity">湿度</option>
       <option value="wind.speed">風速</option>
       <option value="wind.deg">風向</option>
-      <option value="name">都市名</option>
     </select> 
-    </h2>
-    <h2>
+  </h2>
+  <h2 id="botann">
     <button id="kensaku">検索</button>
-    </h2>
-</p>
+  </h2>
 
   </body>
 </html>
