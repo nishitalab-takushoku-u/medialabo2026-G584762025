@@ -25,3 +25,18 @@ p.kougi4{
 p.kougi5{
     background:linear-gradient(0.25turn,#cf8ae8, #e7f6f0);
 }
+p.kougi6{
+    background:linear-gradient(0.25turn,#e88aab, #e7f6f0);
+}
+p.te-ma{
+    background:linear-gradient(rgb(182, 182, 182));
+}
+p.kadai{
+    background:linear-gradient(rgb(255, 219, 164));
+}
+p.kazu{
+    background:linear-gradient(rgb(159, 236, 229));
+}
+p.matome{
+    background:linear-gradient(white);
+}
